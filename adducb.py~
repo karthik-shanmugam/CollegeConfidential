@@ -1,0 +1,11 @@
+f1=open('FrequencyData.txt','r')
+f2=open('FrequencyDataUCB.txt','r')
+f3=open('FinalData.txt','w')
+f1.readline()
+f2.readline()
+f3.write('Berkeley Stanford UCLA USC')
+for i in range(9998):
+	s1=f1.readline().split()
+	f3.writeline(str( (int(s1[0])+int(f2.readline())))+' '+s1[1]+' '+s1[2]+' '+s1[3])
+
+
